@@ -21,6 +21,20 @@
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
+.light-mode {
+  --color-primary: #ffffff;
+  --color-secondary: #ff70a6;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #616e78;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #838e98;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
+}
+
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
@@ -76,6 +90,9 @@ section {
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
 }
+.controls .control:active {
+  transform: translateY(-3px);
+}
 .controls .control i {
   font-size: 1.2rem;
   pointer-events: none;
@@ -86,6 +103,30 @@ section {
 }
 .controls .active-btn i {
   color: var(--color-white) !important;
+}
+
+.theme-btn {
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:active {
+  transform: translateY(-3px);
+}
+.theme-btn i {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
 }
 
 .btn-con {
@@ -369,7 +410,7 @@ section {
 .sec2 .timeline .timeline-items .timeline-item {
   position: relative;
   padding-left: 3rem;
-  border-left: 1px solid var(--color-grey-5);
+  border-left: 1px solid var(--color-grey-4);
   padding-bottom: 3rem;
 }
 .sec2 .timeline .timeline-items .timeline-item .timeline-icon {
