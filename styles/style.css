@@ -6,8 +6,8 @@
 }
 
 :root {
-  --color-primary: #191d2b;
-  --color-secondary: #27ae60;
+  --color-primary: #161925;
+  --color-secondary: #52b788;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -482,11 +482,6 @@ section {
 .sec3 .projects .project:hover .hover {
   opacity: 1;
   transform: scale(1);
-}
-
-.sec4 {
-  display: none;
-  transform: translateY(0) scale(1);
 }
 
 .active {
